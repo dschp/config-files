@@ -3,15 +3,19 @@ keycode  66 = Control_L
 ! Ro \_
 keycode  97 = Control_L
 
+! Left Alt
+keycode  64 = ISO_Level3_Shift
+! Right Ctrl
+keycode 105 = ISO_Level3_Shift
+! Yen next to BackSpace
+keycode 132 = ISO_Level3_Shift
+
 ! PrtSc SysRq
 keycode 107 = Hyper_L
 ! ScrLk
 keycode 78  = Hyper_R
 ! Pause Break
 keycode 127 = Mode_switch
-
-! Yen next to BackSpace
-keycode 132 = Super_R
 
 ! Muhenkan
 keycode 102 = Alt_L
@@ -69,7 +73,7 @@ clear mod5
 add control = Control_L Control_R
 add mod1    = Alt_L Alt_R
 add mod2    = Hyper_L Hyper_R
-add mod3    = ISO_Level3_Shift
-add mod4    = Super_L Super_R
+add mod3    = Super_L Super_R
+add mod4    = ISO_Level3_Shift
 add mod5    = Mode_switch
 
