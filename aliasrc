@@ -1,0 +1,45 @@
+alias a=alias
+alias b=bindkey
+alias c=clear
+alias d=date
+alias e=echo
+alias f=fg
+alias g=grep
+alias h=history
+alias i=id
+alias j=jobs
+alias l=less
+alias m=make
+alias n=nano
+alias p=pwd
+alias s=ssh
+alias t=tmux
+
+alias rr=rehash
+alias ls='ls --color'
+alias la='ls --color -la'
+alias ll='ls --color -l'
+alias py=python
+
+alias hn='hostnamectl hostname'
+
+alias gst='git status'
+alias gad='git add'
+alias gcm='git commit'
+alias gdf='git diff'
+alias glg='git log'
+alias grv='git remote -v'
+alias gck='git checkout'
+alias gll='git pull'
+alias gsh='git push'
+alias gbr='git branch'
+
+alias pgv='gpg --verify'
+
+alias pc='pass -c'
+alias pe='pass edit'
+alias pf='pass find'
+
+alias mm=mpg123
+alias ms='mpg123 -z'
+alias mz='mpg123 -Z'

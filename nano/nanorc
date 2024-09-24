@@ -1,0 +1,67 @@
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano/extra/*.nanorc"
+
+set tabsize 4
+
+bind ^Z   suspend       all
+bind M-v  pageup        all
+
+bind ^F   forward       all
+bind ^B   back          all
+bind M-F  nextword      all
+bind M-B  prevword      all
+bind M-p  beginpara     all
+bind M-n  endpara       all
+bind M-a  prevblock     all
+bind M-e  nextblock     all
+bind M-<  firstline     all
+bind M->  lastline      all
+bind M-,  toprow        all
+bind M-.  bottomrow     all
+
+unbind M-j main
+unbind ^T  main
+unbind M-t main
+unbind Ins main
+
+bind M-o    writeout    main
+bind Sh-M-o savefile    main
+
+bind ^W  cut            main
+bind M-w copy           main
+bind ^Y  paste          main
+bind M-k zap            main
+bind M-d chopwordright  main
+bind M-h chopwordleft   main
+bind ^J  enter          main
+bind ^O  enter          main
+
+bind ^/   undo          main
+bind ^\   redo          main
+bind M-u  recordmacro   main
+bind ^U   runmacro      main
+bind M-;  comment       main
+bind M-[  unindent      main
+bind M-]  indent        main
+
+bind ^S   whereis       main
+bind ^R   wherewas      main
+bind M-s  findnext      main
+bind M-r  findprevious  main
+bind ^Q   replace       main
+
+bind ^Space mark        main
+bind M-`    anchor      main
+bind M-q    nextanchor  main
+bind Sh-M-q prevanchor  main
+
+bind F3   constantshow       main
+bind F4   linenumbers        main
+bind F5   softwrap           main
+bind F6   whitespacedisplay  main
+bind F7   autoindent         main
+bind F8   smarthome          main
+bind F9   nosyntax           main
+bind F10  breaklonglines     main
+bind F11  cutfromcursor      main
+bind F12  tabstospaces       main

@@ -1,0 +1,6 @@
+gtk-font-name = "Sans 13"
+
+style "gimp-dark-default-style"
+{
+  font_name = "Sans 9"
+}
