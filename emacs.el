@@ -44,22 +44,50 @@
   (revert-buffer nil t t)
   (message (concat "Reverted buffer " (buffer-name))))
 
-(defun my-mark-isearch-forward ()
-  (interactive)
-  (set-mark-command nil)
-  (isearch-forward)
-  (left-char 1))
-(defun my-mark-isearch-backward ()
-  (interactive)
-  (set-mark-command nil)
-  (isearch-backward)
-  (right-char 1))
+(defun my-char-string (char)
+  (cond
+   ((eq char 32) "SPACE")
+   (t (string char))))
+
+(defun my-mark-to-char (arg char movement)
+  (when (and (> char 31) (< char 127))
+    (let ((ma mark-active)
+	  (cfs case-fold-search))
+      (setq case-fold-search nil)
+      (unless ma (set-mark-command nil))
+      (if (search-forward (char-to-string char) nil t arg)
+	  (progn
+	    (message "Marked until %s (%d)" (my-char-string char) char)
+	    (right-char movement))
+	(message "Char %s (%d) not found" (my-char-string char) char)
+	(deactivate-mark))
+      (setq case-fold-search cfs))))
+
+(defun my-mark-forward-to (arg char)
+  (interactive "p\ncMark forward to: ")
+  (my-mark-to-char arg char 0))
+
+(defun my-mark-backward-to (arg char)
+  (interactive "p\ncMark backward to: ")
+  (my-mark-to-char (- arg) char 0))
+
+(defun my-mark-forward-until (arg char)
+  (interactive "p\ncMark forward until: ")
+  (my-mark-to-char arg char -1))
+
+(defun my-mark-backward-until (arg char)
+  (interactive "p\ncMark backward until: ")
+  (my-mark-to-char (- arg) char 1))
+
+
 
 (keymap-global-set "M-<up>"   'my-previous-line)
 (keymap-global-set "M-<down>" 'my-next-line)
 
-(keymap-global-set "M-S" 'my-mark-isearch-forward)
-(keymap-global-set "M-R" 'my-mark-isearch-backward)
+(keymap-global-set "s-s" 'my-mark-forward-until)
+(keymap-global-set "s-r" 'my-mark-backward-until)
+(keymap-global-set "s-S" 'my-mark-forward-to)
+(keymap-global-set "s-R" 'my-mark-backward-to)
 
 (keymap-global-set "C-," 'backward-delete-char-untabify)
 (keymap-global-set "C-." 'backward-kill-sentence)
