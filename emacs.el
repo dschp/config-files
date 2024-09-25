@@ -47,6 +47,8 @@
 (defun my-char-string (char)
   (cond
    ((eq char 32) "SPACE")
+   ((eq char 40) "'('")
+   ((eq char 41) "')'")
    (t (string char))))
 
 (defun my-mark-to-char (arg char movement)
@@ -60,7 +62,7 @@
 	    (message "Marked until %s (%d)" (my-char-string char) char)
 	    (right-char movement))
 	(message "Char %s (%d) not found" (my-char-string char) char)
-	(deactivate-mark))
+	(unless ma (deactivate-mark)))
       (setq case-fold-search cfs))))
 
 (defun my-mark-forward-to (arg char)
@@ -78,7 +80,6 @@
 (defun my-mark-backward-until (arg char)
   (interactive "p\ncMark backward until: ")
   (my-mark-to-char (- arg) char 1))
-
 
 
 (keymap-global-set "M-<up>"   'my-previous-line)
