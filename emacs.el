@@ -3,6 +3,7 @@
              '("melpa" . "https://melpa.org/packages/") t)
 
 (setq magit-define-global-key-bindings 'recommended)
+(setq inhibit-startup-screen t)
 
 
 (defun my-shrink-v5 ()
