@@ -44,9 +44,22 @@
   (revert-buffer nil t t)
   (message (concat "Reverted buffer " (buffer-name))))
 
+(defun my-mark-isearch-forward ()
+  (interactive)
+  (set-mark-command nil)
+  (isearch-forward)
+  (left-char 1))
+(defun my-mark-isearch-backward ()
+  (interactive)
+  (set-mark-command nil)
+  (isearch-backward)
+  (right-char 1))
 
 (keymap-global-set "M-<up>"   'my-previous-line)
 (keymap-global-set "M-<down>" 'my-next-line)
+
+(keymap-global-set "M-S" 'my-mark-isearch-forward)
+(keymap-global-set "M-R" 'my-mark-isearch-backward)
 
 (keymap-global-set "C-," 'backward-delete-char-untabify)
 (keymap-global-set "C-." 'backward-kill-sentence)
