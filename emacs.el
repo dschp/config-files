@@ -51,6 +51,10 @@
    ((eq char 41) "')'")
    (t (string char))))
 
+(defun my-switch-to-previous-buffer ()
+  (interactive)
+  (switch-to-buffer (other-buffer)))
+
 (defun my-mark-to-char (arg char movement)
   (when (and (> char 31) (< char 127))
     (let ((ma mark-active)
@@ -92,6 +96,8 @@
 
 (keymap-global-set "C-," 'backward-delete-char-untabify)
 (keymap-global-set "C-." 'backward-kill-sentence)
+
+(keymap-global-set "s-<tab>" 'my-switch-to-previous-buffer)
 
 (keymap-global-set "C-<tab>" 'other-window)
 (keymap-global-set "H-o"     'other-window)
