@@ -32,6 +32,4 @@ fi
 
 [ -x $HOME/.fehbg ] && $HOME/.fehbg
 [ -f $HOME/.xinitrc.env ] && source $HOME/.xinitrc.env
-[ -x $HOME/.xinitrc.local ] && $HOME/.xinitrc.local
-
-exec dwm
+exec $HOME/.xinitrc.local
