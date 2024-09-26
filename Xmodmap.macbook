@@ -1,5 +1,13 @@
 ! CapsLock
 keycode  66 = Control_L
+! Left Control
+keycode  37 = ISO_Level3_Shift
+! Left Option
+keycode  64 = Super_L
+! Left Command
+keycode 133 = Alt_L
+! Right Command
+keycode 134 = Hyper_L
 ! Right Option
 keycode 108 = Mode_switch
 
@@ -48,12 +56,22 @@ keycode  48 = apostrophe quotedbl oe OE
 keycode  52 = z Z acircumflex Acircumflex
 keycode  53 = x X atilde Atilde
 keycode  54 = c C ccedilla Ccedilla
+keycode  55 = v V ae AE
+keycode  56 = b B oe OE
 keycode  57 = n N ntilde Ntilde
 
+
+clear mod1
 clear mod2
 clear mod3
+clear mod4
 clear mod5
 clear lock
 clear control
-add mod1    = Alt_L
+
 add control = Control_L Caps_Lock
+add mod1    = Alt_L Alt_R
+add mod2    = Hyper_L Hyper_R
+add mod3    = Super_L Super_R
+add mod4    = ISO_Level3_Shift
+add mod5    = Mode_switch
