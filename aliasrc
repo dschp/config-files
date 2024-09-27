@@ -40,6 +40,9 @@ alias pc='pass -c'
 alias pe='pass edit'
 alias pf='pass find'
 
+alias am=alsamixer
+alias bt=bluetoothctl
+
 alias mm=mpg123
 alias ms='mpg123 -z'
 alias mz='mpg123 -Z'
