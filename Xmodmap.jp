@@ -5,17 +5,8 @@ keycode  97 = Control_L
 
 ! Left Alt
 keycode  64 = ISO_Level3_Shift
-! Right Ctrl
-keycode 105 = ISO_Level3_Shift
 ! Yen next to BackSpace
 keycode 132 = ISO_Level3_Shift
-
-! PrtSc SysRq
-keycode 107 = Hyper_L
-! ScrLk
-keycode 78  = Hyper_R
-! Pause Break
-keycode 127 = Mode_switch
 
 ! Muhenkan
 keycode 102 = Alt_L
@@ -25,6 +16,15 @@ keycode 100 = Alt_R
 keycode 101 = Mode_switch
 ! Context Menu
 keycode 135 = Hyper_R
+! Right Ctrl
+keycode 105 = Super_R
+
+! PrtSc SysRq
+keycode 107 = F13
+! ScrLk
+keycode 78  = F14
+! Pause Break
+keycode 127 = F15
 
 ! Misc Symbols
 keycode  10 = 1 exclam exclamdown exclamdown
