@@ -129,6 +129,8 @@
 (keymap-global-set "H-r"  'rename-buffer)
 (keymap-global-set "H-k"  'kill-current-buffer)
 
+(keymap-global-set "H-a"  'org-agenda)
+
 (keymap-global-set "<f1>" 'shell)
 (keymap-global-set "<f2>" 'rgrep)
 
@@ -139,6 +141,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(menu-bar-mode nil)
+ '(org-agenda-files '("~/org/main.org"))
  '(package-selected-packages
    '(color-theme-sanityinc-solarized monokai-theme color-theme-sanityinc-tomorrow solarized-theme modus-themes ample-theme spacemacs-theme doom-themes dracula-theme magit))
  '(tool-bar-mode nil))
