@@ -3,8 +3,10 @@ keycode  66 = Control_L
 ! Ro \_
 keycode  97 = Control_L
 
+! Left Windows
+keycode 133 = ISO_Level3_Shift
 ! Left Alt
-keycode  64 = ISO_Level3_Shift
+keycode  64 = Super_L
 ! Yen next to BackSpace
 keycode 132 = ISO_Level3_Shift
 
@@ -15,9 +17,9 @@ keycode 100 = Alt_R
 ! Kana Romaji
 keycode 101 = Mode_switch
 ! Context Menu
-keycode 135 = Hyper_R
+keycode 135 = Super_R
 ! Right Ctrl
-keycode 105 = Super_R
+keycode 105 = Hyper_R
 
 ! PrtSc SysRq
 keycode 107 = F13
