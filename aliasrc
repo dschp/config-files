@@ -20,7 +20,7 @@ alias ls='ls --color'
 alias la='ls --color -la'
 alias ll='ls --color -l'
 alias py=python
-
+alias ua='uname -a'
 alias hn='hostnamectl hostname'
 
 alias gst='git status'

@@ -120,8 +120,8 @@
 (keymap-global-set "C-H-<down>"  'my-enlarge-v10)
 (keymap-global-set "C-H-<right>" 'my-enlarge-h10)
 
-(keymap-global-set "H-b"         'switch-to-buffer)
-(keymap-global-set "H-B"         'list-buffers)
+(keymap-global-set "H-b"  'switch-to-buffer)
+(keymap-global-set "H-B"  'list-buffers)
 
 (keymap-global-set "H-c"  'compile)
 (keymap-global-set "H-C"  'recompile)
