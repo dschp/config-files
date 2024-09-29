@@ -99,6 +99,7 @@
 
 (keymap-global-set "s-<tab>" 'my-switch-to-previous-buffer)
 (keymap-global-set "s-b"     'buffer-menu)
+(keymap-global-set "s-n"     'global-display-line-numbers-mode)
 
 (keymap-global-set "C-<tab>" 'other-window)
 (keymap-global-set "H-o"     'other-window)
@@ -134,6 +135,10 @@
 
 (keymap-global-set "<f1>" 'shell)
 (keymap-global-set "<f2>" 'rgrep)
+
+
+(column-number-mode 1)
+(scroll-bar-mode 0)
 
 
 (custom-set-variables
