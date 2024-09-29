@@ -98,6 +98,7 @@
 (keymap-global-set "C-." 'backward-kill-sentence)
 
 (keymap-global-set "s-<tab>" 'my-switch-to-previous-buffer)
+(keymap-global-set "s-b"     'buffer-menu)
 
 (keymap-global-set "C-<tab>" 'other-window)
 (keymap-global-set "H-o"     'other-window)
