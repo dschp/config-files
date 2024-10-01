@@ -6,6 +6,10 @@
 (setq inhibit-startup-screen t)
 
 
+(setq frame-resize-pixelwise t)
+(toggle-frame-maximized)
+
+
 (defun my-shrink-v5 ()
   (interactive)
   (shrink-window 5))
