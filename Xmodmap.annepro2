@@ -1,3 +1,9 @@
+! Left Super
+keycode 133 = ISO_Level5_Shift
+! Right Alt
+keycode 108 = Hyper_L
+! Right Ctrl
+keycode 105 = Super_L
 ! Right Super
 keycode 134 = Mode_switch
 
@@ -35,6 +41,8 @@ keycode  53 = x X atilde Atilde
 keycode  54 = c C ccedilla Ccedilla
 keycode  57 = n N ntilde Ntilde
 
+
+! X86Keys
 keycode 121 = NoSymbol
 keycode 122 = NoSymbol
 keycode 123 = NoSymbol
@@ -133,6 +141,14 @@ keycode 255 = NoSymbol
 
 
 clear lock
+clear control
+clear mod1
 clear mod3
+clear mod4
 clear mod5
 
+add control = Control_L
+add mod1 = Alt_L
+add mod3 = Super_L
+add mod4 = ISO_Level5_Shift
+add mod5 = Hyper_L
