@@ -90,6 +90,9 @@
   (my-mark-to-char (- arg) char 1))
 
 
+(keymap-global-unset "C-z")
+
+
 (keymap-global-set "M-<up>"   'my-previous-line)
 (keymap-global-set "M-<down>" 'my-next-line)
 
