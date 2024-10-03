@@ -80,26 +80,38 @@
   (transpose-lines (- arg))
   (previous-line))
 
+(defun my-duplicate-dwim (arg)
+  (interactive "p")
+  (duplicate-dwim arg)
+  (next-line))
+(defun my-duplicate-line (arg)
+  (interactive "p")
+  (duplicate-line arg)
+  (next-line))
 
-(keymap-global-unset "C-z")
+
 (keymap-global-set "M-z" 'backward-delete-char-untabify)
 (keymap-global-set "M-Z" 'delete-char)
+(keymap-global-set "M-o" 'my-duplicate-dwim)
+(keymap-global-set "M-O" 'my-duplicate-line)
 
-(keymap-global-set "C-<tab>" 'other-window)
-
+(keymap-global-set "M-p"      'backward-paragraph)
+(keymap-global-set "M-n"      'forward-paragraph)
 (keymap-global-set "M-<up>"   'my-transpose-line-backward)
 (keymap-global-set "M-<down>" 'my-transpose-line-forward)
-(keymap-global-set "M-p"      'my-transpose-line-backward)
-(keymap-global-set "M-n"      'my-transpose-line-forward)
+(keymap-global-set "M-["      'my-transpose-line-backward)
+(keymap-global-set "M-]"      'my-transpose-line-forward)
+(keymap-global-unset "M-{")
+(keymap-global-unset "M-}")
 
-(keymap-global-set "C-z d"    'duplicate-line)
-(keymap-global-set "C-z C-d"  'duplicate-dwim)
+(keymap-global-unset "C-z")
 
 (keymap-global-set "C-z s"    'my-mark-forward-until)
 (keymap-global-set "C-z r"    'my-mark-backward-until)
 (keymap-global-set "C-z C-s"  'my-mark-forward-to)
 (keymap-global-set "C-z C-r"  'my-mark-backward-to)
 
+(keymap-global-set "C-<tab>"   'other-window)
 (keymap-global-set "C-z <tab>" 'my-switch-to-previous-buffer)
 (keymap-global-set "C-z b"     'buffer-menu)
 (keymap-global-set "C-z C-b"   'buffer-menu)
