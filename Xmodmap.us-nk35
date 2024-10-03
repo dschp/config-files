@@ -2,7 +2,6 @@
 keycode  66 = Control_L
 ! Left Ctrl
 keycode  37 = Mode_switch
-!keycode  37 = Control_L
 ! Num Lock
 keycode  77 = F11
 ! PrtSc SysRq
@@ -10,25 +9,43 @@ keycode 107 = F12
 
 
 ! Fn + F1
-keycode  95 = F1
+keycode  95 = F13
 ! Fn + F2
-keycode  96 = F2
+keycode  96 = F14
 ! Fn + F3
-keycode 179 = F3
+keycode 179 = F15
 ! Fn + F4
-keycode 173 = F4
+keycode 173 = F16
 ! Fn + F5
-keycode 172 = F5
+keycode 172 = F17
 ! Fn + F6
-keycode 171 = F6
+keycode 171 = F18
 ! Fn + F7
-keycode 121 = F7
+keycode 121 = F19
 ! Fn + F8
-keycode 122 = F8
+keycode 122 = F20
 ! Fn + F9
-keycode 123 = F9
+keycode 123 = F21
 ! Fn + F10
-keycode  78 = F10
+keycode  78 = F22
+
+
+! Fn KP keys
+keycode  63 = slash
+keycode  79 = plus
+keycode  80 = minus
+keycode  81 = asterisk
+keycode  82 = Insert
+keycode  83 = Home
+keycode  84 = Up
+keycode  85 = End
+keycode  86 = Delete
+keycode  87 = Left
+keycode  88 = Down
+keycode  89 = Right
+keycode  90 = Prior
+keycode  91 = Next
+keycode 106 = BackSpace
 
 
 ! Misc Symbols
@@ -64,118 +81,6 @@ keycode  52 = z Z acircumflex Acircumflex
 keycode  53 = x X atilde Atilde
 keycode  54 = c C ccedilla Ccedilla
 keycode  57 = n N ntilde Ntilde
-
-
-! X86Keys
-keycode 124 = NoSymbol
-keycode 128 = NoSymbol
-keycode 141 = NoSymbol
-keycode 142 = NoSymbol
-keycode 143 = NoSymbol
-keycode 145 = NoSymbol
-keycode 147 = NoSymbol
-keycode 148 = NoSymbol
-keycode 150 = NoSymbol
-keycode 151 = NoSymbol
-keycode 152 = NoSymbol
-keycode 153 = NoSymbol
-keycode 155 = NoSymbol
-keycode 156 = NoSymbol
-keycode 157 = NoSymbol
-keycode 158 = NoSymbol
-keycode 159 = NoSymbol
-keycode 160 = NoSymbol
-keycode 161 = NoSymbol
-keycode 162 = NoSymbol
-keycode 163 = NoSymbol
-keycode 164 = NoSymbol
-keycode 165 = NoSymbol
-keycode 166 = NoSymbol
-keycode 167 = NoSymbol
-keycode 169 = NoSymbol
-keycode 170 = NoSymbol
-keycode 174 = NoSymbol
-keycode 175 = NoSymbol
-keycode 176 = NoSymbol
-keycode 177 = NoSymbol
-keycode 180 = NoSymbol
-keycode 181 = NoSymbol
-keycode 182 = NoSymbol
-keycode 185 = NoSymbol
-keycode 186 = NoSymbol
-keycode 189 = NoSymbol
-keycode 191 = NoSymbol
-keycode 192 = NoSymbol
-keycode 193 = NoSymbol
-keycode 194 = NoSymbol
-keycode 195 = NoSymbol
-keycode 196 = NoSymbol
-keycode 198 = NoSymbol
-keycode 199 = NoSymbol
-keycode 200 = NoSymbol
-keycode 201 = NoSymbol
-keycode 208 = NoSymbol
-keycode 209 = NoSymbol
-keycode 210 = NoSymbol
-keycode 211 = NoSymbol
-keycode 212 = NoSymbol
-keycode 213 = NoSymbol
-keycode 214 = NoSymbol
-keycode 215 = NoSymbol
-keycode 216 = NoSymbol
-keycode 220 = NoSymbol
-keycode 221 = NoSymbol
-keycode 223 = NoSymbol
-keycode 224 = NoSymbol
-keycode 225 = NoSymbol
-keycode 226 = NoSymbol
-keycode 227 = NoSymbol
-keycode 228 = NoSymbol
-keycode 229 = NoSymbol
-keycode 232 = NoSymbol
-keycode 233 = NoSymbol
-keycode 234 = NoSymbol
-keycode 235 = NoSymbol
-keycode 236 = NoSymbol
-keycode 237 = NoSymbol
-keycode 238 = NoSymbol
-keycode 239 = NoSymbol
-keycode 240 = NoSymbol
-keycode 241 = NoSymbol
-keycode 242 = NoSymbol
-keycode 243 = NoSymbol
-keycode 244 = NoSymbol
-keycode 245 = NoSymbol
-keycode 246 = NoSymbol
-keycode 247 = NoSymbol
-keycode 249 = NoSymbol
-keycode 250 = NoSymbol
-keycode 251 = NoSymbol
-keycode 252 = NoSymbol
-keycode 253 = NoSymbol
-keycode 254 = NoSymbol
-keycode 255 = NoSymbol
-
-
-! Fn KP keys
-keycode  63 = 0 parenright iacute Iacute
-keycode  79 = 7 ampersand udiaeresis Udiaeresis
-keycode  80 = 8 asterisk idiaeresis Idiaeresis
-keycode  81 = 9 parenleft odiaeresis Odiaeresis
-keycode  82 = p P oacute Oacute
-keycode  83 = u U ugrave Ugrave
-keycode  84 = i I igrave Igrave
-keycode  85 = o O ograve Ograve
-keycode  86 = semicolon colon otilde Otilde
-keycode  87 = j J ucircumflex Ucircumflex
-keycode  88 = k K icircumflex Icircumflex
-keycode  89 = l L ocircumflex Ocircumflex
-keycode  90 = m M
-keycode  91 = period greater guillemetright
-keycode 104 = NoSymbol
-keycode 106 = slash question questiondown
-keycode 125 = NoSymbol
-keycode 129 = NoSymbol
 
 
 
