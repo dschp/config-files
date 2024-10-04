@@ -3,11 +3,18 @@
              '("melpa" . "https://melpa.org/packages/") t)
 
 (setq magit-define-global-key-bindings 'recommended)
+
 (setq inhibit-startup-screen t)
 
 (setq frame-resize-pixelwise t)
-(toggle-frame-maximized)
+(scroll-bar-mode 0)
+(column-number-mode 1)
 
+
+(defun my-toggle-line-numbers ()
+  (interactive)
+  (setq display-line-numbers
+	(if (eq nil display-line-numbers) 'relative nil)))
 
 (defun my-change-window-size (func vh size)
   (if (= size 0) (message "Invalid Size: 0")
@@ -115,7 +122,7 @@
 (keymap-global-set "C-z <tab>" 'my-switch-to-previous-buffer)
 (keymap-global-set "C-z b"     'buffer-menu)
 (keymap-global-set "C-z C-b"   'buffer-menu)
-(keymap-global-set "C-z n"     'global-display-line-numbers-mode)
+(keymap-global-set "C-z n"     'my-toggle-line-numbers)
 
 (keymap-global-set "C-z 2" 'my-change-window-size-v)
 (keymap-global-set "C-z 3" 'my-change-window-size-h)
@@ -125,14 +132,9 @@
 (keymap-global-set "C-z R"   'rename-buffer)
 (keymap-global-set "C-z k"   'kill-current-buffer)
 
-(keymap-global-set "C-z a"   'org-agenda)
-
 (keymap-global-set "<f1>" 'shell)
-(keymap-global-set "<f2>" 'rgrep)
+(keymap-global-set "<f2>" 'org-agenda)
 
-
-(column-number-mode 1)
-(scroll-bar-mode 0)
 
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
