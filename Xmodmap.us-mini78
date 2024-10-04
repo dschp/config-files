@@ -1,11 +1,11 @@
 ! CapsLock
-keycode  66 = Control_L
+keycode  66 = Control_L Control_L Control_L Control_L
 ! Left Ctrl
 keycode  37 = Mode_switch
 ! Num Lock
 keycode  77 = Mode_switch
 ! PrtSc SysRq
-keycode 107 = Super_R
+keycode 107 = Super_R Super_R Super_R Super_R
 
 
 ! Fn + F1
