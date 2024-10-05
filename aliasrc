@@ -15,6 +15,11 @@ alias p=pwd
 alias s=ssh
 alias t=tmux
 
+alias et='exec tmux'
+alias tl='tmux ls'
+alias tlc='tmux lsc'
+alias tk='tmux kill-session'
+
 alias rr=rehash
 alias ls='ls --color'
 alias la='ls --color -la'

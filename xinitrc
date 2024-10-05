@@ -32,4 +32,12 @@ fi
 
 [ -x $HOME/.fehbg ] && $HOME/.fehbg
 [ -f $HOME/.xinitrc.env ] && source $HOME/.xinitrc.env
-exec $HOME/.xinitrc.local
+[ -x $HOME/.xinitrc.local ] && $HOME/.xinitrc.local
+
+DIR=$XDG_RUNTIME_DIR/status
+mkdir -p $DIR
+
+killall dwmstatus
+dwmstatus $DIR &
+
+exec dwm
