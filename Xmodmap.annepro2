@@ -1,10 +1,5 @@
-! Left Super
-keycode 133 = ISO_Level5_Shift
 ! Right Super
 keycode 134 = Mode_switch
-
-! Tap Bar Backslash
-keycode  94 = backslash bar
 
 ! Misc Symbols
 keycode  10 = 1 exclam exclamdown exclamdown
@@ -34,10 +29,11 @@ keycode  44 = j J ucircumflex Ucircumflex
 keycode  45 = k K icircumflex Icircumflex
 keycode  46 = l L ocircumflex Ocircumflex
 keycode  47 = semicolon colon otilde Otilde
-keycode  48 = apostrophe quotedbl oe OE
 keycode  52 = z Z acircumflex Acircumflex
 keycode  53 = x X atilde Atilde
 keycode  54 = c C ccedilla Ccedilla
+keycode  55 = v V ae AE
+keycode  56 = b B oe OE
 keycode  57 = n N ntilde Ntilde
 
 
@@ -148,4 +144,4 @@ clear mod5
 
 add control = Control_L Control_R
 add mod1 = Alt_L Alt_R
-add mod4 = ISO_Level5_Shift
+add mod4 = Super_L
