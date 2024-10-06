@@ -134,6 +134,11 @@
 
 (keymap-global-set "C-z w"   'whitespace-mode)
 
+(keymap-global-set "C-M-;"   'scroll-other-window-down)
+(keymap-global-set "C-M-'"   'scroll-other-window)
+(keymap-global-set "C-M-:"   'beginning-of-buffer-other-window)
+(keymap-global-set "C-M-\""  'end-of-buffer-other-window)
+
 (keymap-global-set "<f1>" 'shell)
 (keymap-global-set "<f2>" 'org-agenda)
 
