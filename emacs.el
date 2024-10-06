@@ -132,6 +132,8 @@
 (keymap-global-set "C-z R"   'rename-buffer)
 (keymap-global-set "C-z k"   'kill-current-buffer)
 
+(keymap-global-set "C-z w"   'whitespace-mode)
+
 (keymap-global-set "<f1>" 'shell)
 (keymap-global-set "<f2>" 'org-agenda)
 
