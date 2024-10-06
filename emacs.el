@@ -97,26 +97,40 @@
   (next-line))
 
 
+(keymap-global-set "<f1>" 'shell)
+(keymap-global-set "<f2>" 'org-agenda)
+
 (keymap-global-set "M-z" 'backward-delete-char-untabify)
 (keymap-global-set "M-Z" 'delete-char)
 (keymap-global-set "M-o" 'my-duplicate-dwim)
 (keymap-global-set "M-O" 'my-duplicate-line)
 
-(keymap-global-set "M-p"      'backward-paragraph)
-(keymap-global-set "M-n"      'forward-paragraph)
-(keymap-global-set "M-<up>"   'my-transpose-line-backward)
-(keymap-global-set "M-<down>" 'my-transpose-line-forward)
-(keymap-global-set "M-["      'my-transpose-line-backward)
-(keymap-global-set "M-]"      'my-transpose-line-forward)
-(keymap-global-unset "M-{")
-(keymap-global-unset "M-}")
+(keymap-global-set "M-p" 'backward-paragraph)
+(keymap-global-set "M-n" 'forward-paragraph)
+(keymap-global-set "M-[" 'my-transpose-line-backward)
+(keymap-global-set "M-]" 'my-transpose-line-forward)
+(keymap-global-set "M-{" 'scroll-down-command)
+(keymap-global-set "M-}" 'scroll-up-command)
+
+(keymap-global-unset "C-v")
+(keymap-global-unset "M-v")
+(keymap-global-unset "C-M-v")
+(keymap-global-unset "C-M-S-v")
+
+(keymap-global-set "C-M-;"   'scroll-other-window-down)
+(keymap-global-set "C-M-'"   'scroll-other-window)
+(keymap-global-set "C-M-:"   'beginning-of-buffer-other-window)
+(keymap-global-set "C-M-\""  'end-of-buffer-other-window)
+
+(keymap-global-set "C-M-k"   'kill-sexp)
+(keymap-global-set "C-M-S-k" 'backward-kill-sexp)
 
 (keymap-global-unset "C-z")
 
-(keymap-global-set "C-z s"    'my-mark-forward-until)
-(keymap-global-set "C-z r"    'my-mark-backward-until)
-(keymap-global-set "C-z C-s"  'my-mark-forward-to)
-(keymap-global-set "C-z C-r"  'my-mark-backward-to)
+(keymap-global-set "C-z s"   'my-mark-forward-until)
+(keymap-global-set "C-z r"   'my-mark-backward-until)
+(keymap-global-set "C-z C-s" 'my-mark-forward-to)
+(keymap-global-set "C-z C-r" 'my-mark-backward-to)
 
 (keymap-global-set "C-<tab>"   'other-window)
 (keymap-global-set "C-z <tab>" 'my-switch-to-previous-buffer)
@@ -124,23 +138,14 @@
 (keymap-global-set "C-z C-b"   'buffer-menu)
 (keymap-global-set "C-z n"     'my-toggle-line-numbers)
 
-(keymap-global-set "C-z 2" 'my-change-window-size-v)
-(keymap-global-set "C-z 3" 'my-change-window-size-h)
+(keymap-global-set "C-z 2"   'my-change-window-size-v)
+(keymap-global-set "C-z 3"   'my-change-window-size-h)
 
 (keymap-global-set "C-z c"   'compile)
 (keymap-global-set "C-z C-c" 'recompile)
 (keymap-global-set "C-z R"   'rename-buffer)
 (keymap-global-set "C-z k"   'kill-current-buffer)
-
 (keymap-global-set "C-z w"   'whitespace-mode)
-
-(keymap-global-set "C-M-;"   'scroll-other-window-down)
-(keymap-global-set "C-M-'"   'scroll-other-window)
-(keymap-global-set "C-M-:"   'beginning-of-buffer-other-window)
-(keymap-global-set "C-M-\""  'end-of-buffer-other-window)
-
-(keymap-global-set "<f1>" 'shell)
-(keymap-global-set "<f2>" 'org-agenda)
 
 
 (setq custom-file "~/.emacs.d/custom.el")
