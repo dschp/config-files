@@ -31,13 +31,13 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 [ -x $HOME/.fehbg ] && $HOME/.fehbg
+
+export STATUS_DIR=$XDG_RUNTIME_DIR/status
+mkdir -p $STATUS_DIR
+killall dwmstatus
+dwmstatus $STATUS_DIR &
+
 [ -f $HOME/.xinitrc.env ] && source $HOME/.xinitrc.env
 [ -x $HOME/.xinitrc.local ] && $HOME/.xinitrc.local
-
-DIR=$XDG_RUNTIME_DIR/status
-mkdir -p $DIR
-
-killall dwmstatus
-dwmstatus $DIR &
 
 exec dwm
