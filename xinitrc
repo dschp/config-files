@@ -34,8 +34,6 @@ fi
 
 export STATUS_DIR=$XDG_RUNTIME_DIR/status
 mkdir -p $STATUS_DIR
-killall dwmstatus
-dwmstatus $STATUS_DIR &
 
 [ -f $HOME/.xinitrc.env ] && source $HOME/.xinitrc.env
 [ -x $HOME/.xinitrc.local ] && $HOME/.xinitrc.local
