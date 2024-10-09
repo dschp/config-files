@@ -96,6 +96,7 @@
   (duplicate-line arg)
   (next-line))
 
+(keymap-global-unset "C-x C-z")
 
 (keymap-global-set "<f1>" 'shell)
 (keymap-global-set "<f2>" 'org-agenda)
@@ -137,6 +138,8 @@
 (keymap-global-set "C-z b"     'buffer-menu)
 (keymap-global-set "C-z C-b"   'buffer-menu)
 (keymap-global-set "C-z n"     'my-toggle-line-numbers)
+(keymap-global-set "C-z C-n"   'next-buffer)
+(keymap-global-set "C-z C-p"   'previous-buffer)
 
 (keymap-global-set "C-z 2"   'my-change-window-size-v)
 (keymap-global-set "C-z 3"   'my-change-window-size-h)
