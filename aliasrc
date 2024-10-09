@@ -2,31 +2,33 @@ alias a=alias
 alias b=bindkey
 alias c=clear
 alias d=date
-alias e=echo
 alias f=fg
 alias g=grep
 alias h=history
 alias i=id
 alias j=jobs
 alias l=less
-alias m=make
+alias m=mpv
 alias n=nano
 alias p=pwd
 alias s=ssh
 alias t=tmux
+
+alias pf=printf
+alias rr=rehash
 
 alias tt='exec tmux'
 alias tl='tmux ls'
 alias tlc='tmux lsc'
 alias tk='tmux kill-session'
 
-alias rr=rehash
 alias ls='ls --color'
 alias la='ls --color -la'
 alias ll='ls --color -l'
 alias py=python
 alias ua='uname -a'
 alias hn='hostnamectl hostname'
+alias mk=make
 
 alias gst='git status'
 alias gad='git add'
@@ -39,11 +41,8 @@ alias gll='git pull'
 alias gsh='git push'
 alias gbr='git branch'
 
-alias pgv='gpg --verify'
-
 alias pc='pass -c'
 alias pe='pass edit'
-alias pf='pass find'
 
 alias am=alsamixer
 alias bt=bluetoothctl
