@@ -1,0 +1,40 @@
+! Left Control
+keycode  37 = Mode_switch
+! Left Alt
+keycode  64 = Super_L
+! Left Command
+keycode 133 = Alt_L
+! Right Command
+keycode 134 = Alt_R
+! Right Alt
+keycode 108 = Super_R
+
+
+keycode  29 = y Y Home Home
+keycode  30 = u U Prior Prior
+keycode  31 = i I Next Next
+keycode  32 = o O End End
+keycode  33 = p P Insert Insert
+keycode  43 = h H Left Left
+keycode  44 = j J Down Down
+keycode  45 = k K Up Up
+keycode  46 = l L Right Right
+keycode  47 = semicolon colon Prior Prior
+keycode  48 = apostrophe quotedbl Next Next
+keycode  58 = m M BackSpace BackSpace
+keycode  59 = comma less Home Home
+keycode  60 = period greater End End
+keycode  61 = slash question Delete Delete
+
+
+clear lock
+clear control
+clear mod1
+clear mod2
+clear mod3
+clear mod4
+clear mod5
+
+add control = Control_L Control_R
+add mod1 = Alt_L Alt_R
+add mod4 = Super_L Super_R
