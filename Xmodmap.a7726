@@ -9,18 +9,29 @@ keycode 134 = Alt_R
 ! Right Alt
 keycode 108 = Super_R
 
-
+keycode  24 = q Q Home Home
+keycode  25 = w W Up Up
+keycode  26 = e E End End
+keycode  27 = r R Delete Delete
 keycode  29 = y Y Home Home
 keycode  30 = u U Prior Prior
 keycode  31 = i I Next Next
 keycode  32 = o O End End
 keycode  33 = p P Insert Insert
+keycode  38 = a A Left Left
+keycode  39 = s S Down Down
+keycode  40 = d D Right Right
+keycode  41 = f F BackSpace BackSpace
 keycode  43 = h H Left Left
 keycode  44 = j J Down Down
 keycode  45 = k K Up Up
 keycode  46 = l L Right Right
 keycode  47 = semicolon colon Prior Prior
 keycode  48 = apostrophe quotedbl Next Next
+keycode  52 = z Z Prior Prior
+keycode  53 = x X Return Return
+keycode  54 = c C Next Next
+keycode  55 = v V Insert Insert
 keycode  58 = m M BackSpace BackSpace
 keycode  59 = comma less Home Home
 keycode  60 = period greater End End
@@ -33,8 +44,8 @@ keycode 232 = Control_L
 keycode 233 = Alt_L
 keycode 225 = Super_L
 
-keycode 173 = NoSymbol
-keycode 172 = NoSymbol
+keycode 173 = Mode_switch
+keycode 172 = Mode_switch
 keycode 171 = Mode_switch
 keycode 121 = Super_R
 keycode 122 = Alt_R
