@@ -39,12 +39,12 @@ keycode  61 = slash question Delete Delete
 
 
 ! Media Keys
-keycode 180 = Shift_L
-keycode 232 = Control_L
-keycode 233 = Alt_L
-keycode 225 = Super_L
+keycode 180 = Home
+keycode 232 = Prior
+keycode 233 = Next
+keycode 225 = End
 
-keycode 173 = Mode_switch
+keycode 173 = Insert
 keycode 172 = Mode_switch
 keycode 171 = Mode_switch
 keycode 121 = Super_R
