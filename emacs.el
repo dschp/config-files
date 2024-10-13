@@ -122,6 +122,7 @@
 
 (keymap-global-set "C-]"  'other-window)
 (keymap-global-set "C-\\" 'buffer-menu)
+(keymap-global-set "C-x C-\\" 'buffer-menu)
 (keymap-global-set "C-|"  'switch-to-buffer)
 (keymap-global-set "C-;"  'previous-buffer)
 (keymap-global-set "C-'"  'next-buffer)
@@ -182,6 +183,9 @@
 (keymap-global-set "C-q C-3" 'split-window-right)
 (keymap-global-set "C-q `"   'delete-window)
 (keymap-global-set "C-q C-`" 'delete-window)
+
+(keymap-global-set "C-q C-q" 'quoted-insert)
+(keymap-global-set "C-q C-r" 'revert-buffer)
 
 
 (setq custom-file "~/.emacs.d/custom.el")
