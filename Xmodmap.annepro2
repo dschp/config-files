@@ -1,5 +1,5 @@
 ! Right Super
-keycode 134 = Mode_switch
+keycode 134 = Super_R
 
 ! Backslash Bar
 keycode  94 = backslash bar
