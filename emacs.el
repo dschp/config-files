@@ -173,7 +173,6 @@
 (keymap-global-set "C-z C-c" 'recompile)
 (keymap-global-set "C-z ,"   'rename-buffer)
 (keymap-global-set "C-z k"   'kill-current-buffer)
-(keymap-global-set "C-z w"   'whitespace-mode)
 
 (keymap-global-set "C-q 1"   'delete-other-windows)
 (keymap-global-set "C-q C-1" 'delete-other-windows)
@@ -185,7 +184,9 @@
 (keymap-global-set "C-q C-`" 'delete-window)
 
 (keymap-global-set "C-q C-q" 'quoted-insert)
+(keymap-global-set "C-q C-w" 'whitespace-mode)
 (keymap-global-set "C-q C-r" 'revert-buffer)
+(keymap-global-set "C-q C-k" 'kill-current-buffer)
 
 
 (setq custom-file "~/.emacs.d/custom.el")
