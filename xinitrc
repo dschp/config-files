@@ -5,7 +5,7 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
-setxkbmap us -option ctrl:nocaps
+setxkbmap us -option compose:menu
 
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
