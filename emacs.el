@@ -110,7 +110,6 @@
   (next-line))
 
 (keymap-global-unset "C-x C-z")
-(keymap-global-unset "C-v")
 (keymap-global-unset "M-v")
 (keymap-global-unset "C-q")
 (keymap-global-unset "M-q")
@@ -119,6 +118,8 @@
 (keymap-global-unset "C-M-S-v")
 
 (keymap-global-set "<f1>" 'shell)
+
+(keymap-global-set "C-v"  'visual-line-mode)
 
 (keymap-global-set "C-]"  'other-window)
 (keymap-global-set "C-\\" 'buffer-menu)
@@ -173,6 +174,7 @@
 (keymap-global-set "C-z C-c" 'recompile)
 (keymap-global-set "C-z ,"   'rename-buffer)
 (keymap-global-set "C-z k"   'kill-current-buffer)
+(keymap-global-set "C-z v"   'visual-line-mode)
 
 (keymap-global-set "C-q 1"   'delete-other-windows)
 (keymap-global-set "C-q C-1" 'delete-other-windows)

@@ -5,5 +5,6 @@ export PATH
 export TERM=xterm-256color
 export EDITOR=vi
 
+export COLORTERM=truecolor
 export KEYTIMEOUT=1
 
