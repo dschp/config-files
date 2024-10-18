@@ -1,10 +1,38 @@
 [main]
-capslock    = layer(control)
-leftcontrol = overload(mylayer, esc)
-rightalt    = layer(alt)
+leftcontrol  = oneshot(mylayer)
+rightcontrol = oneshot(control)
+capslock     = oneshot(control)
+shift        = oneshot(shift)
+meta         = oneshot(meta)
+alt          = oneshot(alt)
+
+
+j+k = clear()
+
+
+[meta]
+esc = clear()
+[alt]
+esc = clear()
+[control]
+esc = clear()
+[shift]
+esc = clear()
+
+[myCA:C-A]
+esc = clear()
+
+[myMC:M-C]
+esc = clear()
+[myMA:M-A]
+esc = clear()
+[myMS:M-S]
+esc = clear()
 
 
 [mylayer]
+esc = clear()
+
 grave = esc
 tab = insert
 z = backspace
@@ -12,17 +40,21 @@ x = delete
 
 leftshift = compose
 
-space = layer(mycursor)
-enter = layer(mycursor)
+space = oneshot(mycursor)
+enter = oneshot(mycursor)
 
-/ = layer(myctrlalt)
+/ = oneshot(myCA)
 
-f = layer(myfrench)
-g = layer(mygerman)
-p = layer(myportuguese)
-s = layer(myspanish)
+f = oneshot(myfrench)
+g = oneshot(mygerman)
+p = oneshot(myportuguese)
+s = oneshot(myspanish)
 
 [mycursor]
+esc = clear()
+space = oneshot(mycursor)
+enter = oneshot(mycursor)
+
 w = up
 a = left
 s = down
@@ -41,27 +73,23 @@ j = down
 k = up
 l = right
 
-, = C-A-a
-. = C-A-e
-; = C-A-b
-' = C-A-f
-[ = C-A-u
-] = C-A-d
-- = C-A-p
-= = C-A-n
-
-[myctrlalt]
-a = C-A-a
-e = C-A-e
-u = C-A-u
-d = C-A-d
-f = C-A-f
-b = C-A-b
-n = C-A-n
-p = C-A-p
+1 = f1
+2 = f2
+3 = f3
+4 = f4
+5 = f5
+6 = f6
+7 = f7
+8 = f8
+9 = f9
+0 = f10
+- = f11
+= = f12
 
 
 [myfrench]
+esc = clear()
+
 q = macro(compose a ")
 a = macro(compose a `)
 s = macro(compose a ^)
@@ -114,6 +142,8 @@ z = macro(compose A E)
 x = macro(compose O E)
 
 [mygerman]
+esc = clear()
+
 a = macro(compose a ")
 o = macro(compose o ")
 u = macro(compose u ")
@@ -125,6 +155,8 @@ u = macro(compose U ")
 s = macro(compose SS)
 
 [myportuguese]
+esc = clear()
+
 c = macro(compose c ,)
 
 a = macro(compose a ')
@@ -159,6 +191,8 @@ l = macro(compose O ^)
 
 
 [myspanish]
+esc = clear()
+
 1 = macro(compose ! !)
 / = macro(compose ? ?)
 
