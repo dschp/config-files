@@ -1,25 +1,7 @@
-[ids]
-*
-
 [main]
 capslock    = layer(control)
 leftcontrol = overload(mylayer, esc)
 rightalt    = layer(alt)
-
-
-# For Anne Pro 2
-102nd = backslash
-
-brightnessdown = compose
-brightnessup   = compose
-f15 = C-A-p
-f16 = C-A-n
-f17 = C-A-b
-f18 = C-A-f
-f21 = C-A-a
-f22 = C-A-e
-f23 = C-A-u
-f24 = C-A-d
 
 
 [mylayer]
@@ -27,7 +9,6 @@ grave = esc
 tab = insert
 z = backspace
 x = delete
-102nd = delete
 
 leftshift = compose
 
