@@ -1,7 +1,6 @@
 [main]
-leftcontrol  = oneshot(mylayer)
-rightcontrol = oneshot(control)
 capslock     = oneshot(control)
+control      = oneshot(control)
 shift        = oneshot(shift)
 meta         = oneshot(meta)
 alt          = oneshot(alt)
