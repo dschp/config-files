@@ -1,5 +1,6 @@
 [aliases]
 # just for placeholder
+xfer     = control
 prog3    = mylayer
 prog4    = mycursor
 hp       = myCA
@@ -28,6 +29,9 @@ mycursor = oneshot(mycursor)
 
 d+f = clear()
 j+k = clear()
+
+mouse1 = clear()
+mouse2 = clear()
 
 enter = overload(myenter, enter)
 
