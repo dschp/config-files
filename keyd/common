@@ -1,37 +1,63 @@
+[aliases]
+# just for placeholder
+prog3    = mylayer
+prog4    = mycursor
+hp       = myCA
+camera   = myMA
+sound    = myMC
+question = myMS
+email    = myMCA
+chat     = myMCS
+search   = myMAS
+
+send        = myfrench
+reply       = mygerman
+forwardmail = myportuguese
+save        = myspanish
+
+
 [main]
-capslock     = oneshot(control)
-control      = oneshot(control)
-shift        = oneshot(shift)
-meta         = oneshot(meta)
-alt          = oneshot(alt)
+capslock = oneshot(control)
+control  = oneshot(control)
+shift    = oneshot(shift)
+meta     = oneshot(meta)
+alt      = oneshot(alt)
 
+mylayer  = oneshot(mylayer)
+mycursor = oneshot(mycursor)
 
+d+f = clear()
 j+k = clear()
 
+enter = overload(myenter, enter)
 
-[meta]
-esc = clear()
-[alt]
-esc = clear()
-[control]
-esc = clear()
-[shift]
-esc = clear()
+myCA = oneshot(myCA)
+
+myMA = oneshot(myMA)
+myMC = oneshot(myMC)
+myMS = oneshot(myMS)
+
+myMCA = oneshot(myMCA)
+myMCS = oneshot(myMCS)
+myMAS = oneshot(myMAS)
+
+
+myfrench     = oneshot(myfrench)
+mygerman     = oneshot(mygerman)
+myportuguese = oneshot(myportuguese)
+myspanish    = oneshot(myspanish)
+
 
 [myCA:C-A]
-esc = clear()
-
 [myMC:M-C]
-esc = clear()
 [myMA:M-A]
-esc = clear()
 [myMS:M-S]
-esc = clear()
+[myMCA:M-C-A]
+[myMCS:M-C-S]
+[myMAS:M-A-S]
 
 
 [mylayer]
-esc = clear()
-
 grave = esc
 tab = insert
 z = backspace
@@ -40,7 +66,6 @@ x = delete
 leftshift = compose
 
 space = oneshot(mycursor)
-enter = oneshot(mycursor)
 
 / = oneshot(myCA)
 
@@ -49,11 +74,10 @@ g = oneshot(mygerman)
 p = oneshot(myportuguese)
 s = oneshot(myspanish)
 
-[mycursor]
-esc = clear()
-space = oneshot(mycursor)
-enter = oneshot(mycursor)
+[myenter:M]
+apostrophe = M-enter
 
+[mycursor]
 w = up
 a = left
 s = down
@@ -61,6 +85,7 @@ d = right
 q = home
 e = end
 z = pageup
+x = delete
 c = pagedown
 
 y = home
@@ -85,16 +110,22 @@ l = right
 - = f11
 = = f12
 
+left  = left
+right = right
+up    = up
+down  = down
+
+[mycursor+shift]
+x = backspace
+
 
 [myfrench]
-esc = clear()
-
 q = macro(compose a ")
 a = macro(compose a `)
 s = macro(compose a ^)
 
-w = macro(compose e `)
-e = macro(compose e ')
+e = macro(compose e `)
+r = macro(compose e ')
 d = macro(compose e ^)
 
 y = macro(compose y ")
@@ -119,8 +150,8 @@ q = macro(compose A ")
 a = macro(compose A `)
 s = macro(compose A ^)
 
-w = macro(compose E `)
-e = macro(compose E ')
+e = macro(compose E `)
+r = macro(compose E ')
 d = macro(compose E ^)
 
 y = macro(compose Y ")
@@ -141,8 +172,6 @@ z = macro(compose A E)
 x = macro(compose O E)
 
 [mygerman]
-esc = clear()
-
 a = macro(compose a ")
 o = macro(compose o ")
 u = macro(compose u ")
@@ -154,8 +183,6 @@ u = macro(compose U ")
 s = macro(compose SS)
 
 [myportuguese]
-esc = clear()
-
 c = macro(compose c ,)
 
 a = macro(compose a ')
@@ -190,8 +217,6 @@ l = macro(compose O ^)
 
 
 [myspanish]
-esc = clear()
-
 1 = macro(compose ! !)
 / = macro(compose ? ?)
 
