@@ -51,3 +51,5 @@ alias bt=bluetoothctl
 alias mm=mpg123
 alias ms='mpg123 -z'
 alias mz='mpg123 -Z'
+
+alias trim="tr -d '\n'"
