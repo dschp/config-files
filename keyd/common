@@ -22,8 +22,8 @@ alt      = oneshot(alt)
 
 myspace  = overload(alt, space)
 myenter  = overload(mycursor, enter)
-mylayer  = oneshot(mylayer)
-mycursor = oneshot(mycursor)
+mylayer  = layer(mylayer)
+mycursor = layer(mycursor)
 
 d+f = clear()
 j+k = clear()
@@ -65,16 +65,16 @@ z = pageup
 x = delete
 c = pagedown
 
-y = home
-u = pageup
-i = pagedown
-o = end
+y = delete
+u = home
+i = end
+o = backspace
 h = left
 j = down
 k = up
 l = right
-m     = backspace
-comma = delete
+m     = pagedown
+comma = pageup
 
 1 = f1
 2 = f2
@@ -110,6 +110,7 @@ y = macro(compose y ")
 
 u = macro(compose u ")
 j = macro(compose u `)
+h = macro(compose u ^)
 
 i = macro(compose i ")
 k = macro(compose i ^)
@@ -136,6 +137,7 @@ y = macro(compose Y ")
 
 u = macro(compose U ")
 j = macro(compose U ')
+h = macro(compose U ^)
 
 i = macro(compose I ")
 i = macro(compose I ^)
