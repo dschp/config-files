@@ -1,8 +1,10 @@
 [aliases]
 # just for placeholder
-xfer      = control
+prog1     = control
+prog2     = alt
 prog3     = mylayer
 prog4     = myclear
+
 dashboard = myspace
 suspend   = myenter
 close     = mybackslash
@@ -21,7 +23,6 @@ meta     = oneshot(meta)
 alt      = oneshot(alt)
 
 myspace  = overload(alt, space)
-myenter  = overload(mycursor, enter)
 mylayer  = layer(mylayer)
 myclear  = clear()
 
