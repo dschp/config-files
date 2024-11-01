@@ -2,7 +2,7 @@
 # just for placeholder
 xfer      = control
 prog3     = mylayer
-prog4     = mycursor
+prog4     = myclear
 dashboard = myspace
 suspend   = myenter
 close     = mybackslash
@@ -23,7 +23,7 @@ alt      = oneshot(alt)
 myspace  = overload(alt, space)
 myenter  = overload(mycursor, enter)
 mylayer  = layer(mylayer)
-mycursor = layer(mycursor)
+myclear  = clear()
 
 d+f = clear()
 j+k = clear()
@@ -39,22 +39,6 @@ myspanish    = oneshot(myspanish)
 
 
 [mylayer]
-esc   = clear()
-grave = esc
-tab   = insert
-z     = backspace
-x     = delete
-
-leftshift = compose
-
-space = oneshot(mycursor)
-
-f = oneshot(myfrench)
-g = oneshot(mygerman)
-p = oneshot(myportuguese)
-s = oneshot(myspanish)
-
-[mycursor]
 w = up
 a = left
 s = down
@@ -65,16 +49,20 @@ z = pageup
 x = delete
 c = pagedown
 
-y = delete
 u = home
 i = end
-o = backspace
 h = left
 j = down
 k = up
 l = right
 m     = pagedown
 comma = pageup
+
+f = oneshot(myfrench)
+g = oneshot(mygerman)
+v = compose
+b = oneshot(myportuguese)
+n = oneshot(myspanish)
 
 1 = f1
 2 = f2
@@ -92,9 +80,6 @@ comma = pageup
 esc   = clear()
 grave = esc
 tab   = insert
-
-[mycursor+shift]
-x = backspace
 
 
 [myfrench]
