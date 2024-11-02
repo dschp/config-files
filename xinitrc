@@ -22,9 +22,6 @@ fi
 
 [ -x $HOME/.fehbg ] && $HOME/.fehbg
 
-export STATUS_DIR=$XDG_RUNTIME_DIR/status
-mkdir -p $STATUS_DIR
-
 [ -f $HOME/.xinitrc.env ] && source $HOME/.xinitrc.env
 [ -x $HOME/.xinitrc.local ] && $HOME/.xinitrc.local
 
