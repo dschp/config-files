@@ -109,6 +109,11 @@
   (duplicate-line arg)
   (next-line))
 
+(defun my/spawn-st ()
+  (interactive)
+  (start-process "Terminal" nil "st"))
+
+
 (keymap-global-unset "C-x C-z")
 (keymap-global-unset "M-v")
 (keymap-global-unset "C-q")
@@ -117,7 +122,8 @@
 (keymap-global-unset "C-M-v")
 (keymap-global-unset "C-M-S-v")
 
-(keymap-global-set "<f1>" 'shell)
+(keymap-global-set "<f1>" 'my/spawn-st)
+(keymap-global-set "<f2>" 'shell)
 
 (keymap-global-set "C-v"  'visual-line-mode)
 
