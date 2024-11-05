@@ -1,14 +1,10 @@
 [aliases]
 # just for placeholder
-prog1     = control
-prog2     = alt
+prog1     = myCA
 prog3     = mylayer
 prog4     = myclear
 
-dashboard = myspace
-suspend   = myenter
-close     = mybackslash
-
+xfer        = mycompose
 send        = myfrench
 reply       = mygerman
 forwardmail = myportuguese
@@ -16,15 +12,20 @@ save        = myspanish
 
 
 [main]
-capslock = oneshot(control)
-control  = oneshot(control)
-shift    = oneshot(shift)
-meta     = oneshot(meta)
-alt      = oneshot(alt)
-
-myspace  = overload(alt, space)
+myCA     = layer(myCA)
 mylayer  = layer(mylayer)
 myclear  = clear()
+
+mycompose    = compose
+myfrench     = oneshot(myfrench)
+mygerman     = oneshot(mygerman)
+myportuguese = oneshot(myportuguese)
+myspanish    = oneshot(myspanish)
+
+
+esc         = layer(meta)
+capslock    = layer(control)
+leftcontrol = esc
 
 d+f = clear()
 j+k = clear()
@@ -33,10 +34,55 @@ mouse1 = clear()
 mouse2 = clear()
 
 
-myfrench     = oneshot(myfrench)
-mygerman     = oneshot(mygerman)
-myportuguese = oneshot(myportuguese)
-myspanish    = oneshot(myspanish)
+[meta:M]
+capslock     = layer(myMC)
+shift        = layer(myMS)
+alt          = layer(myMA)
+control      = layer(myMCS)
+mycompose    = layer(myMAS)
+myCA         = layer(myMCA)
+[myMC:M-C]
+shift        = layer(myMCS)
+alt          = layer(myMCA)
+[myMS:M-S]
+capslock     = layer(myMCS)
+alt          = layer(myMAS)
+[myMA:M-A]
+capslock     = layer(myMCA)
+shift        = layer(myMAS)
+[myMCS:M-C-S]
+alt          = layer(myMCAS)
+[myMAS:M-A-S]
+capslock     = layer(myMCAS)
+[myMCA:M-C-A]
+shift        = layer(myMCAS)
+[myMCAS:M-C-A-S]
+
+[control:C]
+meta  = layer(myMC)
+shift = layer(myCS)
+alt   = layer(myCA)
+[myCS:C-S]
+meta  = layer(myMCS)
+alt   = layer(myCAS)
+[myCA:C-A]
+meta  = layer(myMCA)
+shift = layer(myCAS)
+[myCAS:C-A-S]
+meta  = layer(myMCAS)
+
+[alt:A]
+meta     = layer(myMA)
+capslock = layer(myCA)
+shift    = layer(myAS)
+[myAS:A-S]
+meta     = layer(myMAS)
+capslock = layer(myCAS)
+
+[shift:S]
+meta     = layer(myMS)
+capslock = layer(myCS)
+alt      = layer(myAS)
 
 
 [mylayer]
@@ -47,7 +93,7 @@ d = right
 q = home
 e = end
 z = pageup
-x = delete
+x = clear()
 c = pagedown
 
 u = home
@@ -58,12 +104,6 @@ k = up
 l = right
 m     = pagedown
 comma = pageup
-
-f = oneshot(myfrench)
-g = oneshot(mygerman)
-v = compose
-b = oneshot(myportuguese)
-n = oneshot(myspanish)
 
 1 = f1
 2 = f2
@@ -78,9 +118,22 @@ n = oneshot(myspanish)
 - = f11
 = = f12
 
-esc   = clear()
-grave = esc
-tab   = insert
+esc       = clear()
+grave     = esc
+backspace = delete
+backslash = insert
+
+tab          = oneshot(meta)
+capslock     = oneshot(control)
+rightalt     = oneshot(myCA)
+rightcontrol = oneshot(myCA)
+
+
+slash = compose
+left  = oneshot(mygerman)
+up    = oneshot(myspanish)
+down  = oneshot(myportuguese)
+right = oneshot(myfrench)
 
 
 [myfrench]
