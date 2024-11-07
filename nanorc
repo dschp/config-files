@@ -26,9 +26,10 @@ bind M-<  firstline     all
 bind M->  lastline      all
 bind M-:  toprow        all
 bind M-"  bottomrow     all
+bind M-l  center        all
 
-bind M-o    writeout    all
-bind Sh-M-o savefile    all
+bind Sh-M-w writeout    all
+bind Sh-M-s savefile    all
 
 bind ^W  cut            all
 bind M-w copy           all
