@@ -25,6 +25,8 @@ myspanish    = oneshot(myspanish)
 
 esc         = layer(meta)
 capslock    = layer(control)
+alt         = layer(alt)
+meta        = layer(meta)
 leftcontrol = esc
 
 d+f = clear()
@@ -38,7 +40,6 @@ mouse2 = clear()
 capslock     = layer(myMC)
 shift        = layer(myMS)
 alt          = layer(myMA)
-control      = layer(myMCS)
 mycompose    = layer(myMAS)
 myCA         = layer(myMCA)
 [myMC:M-C]
