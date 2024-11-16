@@ -170,9 +170,6 @@
 (keymap-global-set "C-z C-s" 'my/mark-forward-to)
 (keymap-global-set "C-z C-r" 'my/mark-backward-to)
 
-(keymap-global-set "C-z a"   'org-agenda)
-(keymap-global-set "C-z n"   'my/toggle-line-numbers)
-
 (keymap-global-set "C-z 2"   'my/change-window-size-v)
 (keymap-global-set "C-z 3"   'my/change-window-size-h)
 
@@ -195,6 +192,10 @@
 (keymap-global-set "C-q C-w" 'whitespace-mode)
 (keymap-global-set "C-q C-r" 'revert-buffer)
 (keymap-global-set "C-q C-k" 'kill-current-buffer)
+
+(keymap-global-set "C-q a"   'org-agenda)
+(keymap-global-set "C-q C-p" 'org-toggle-inline-images)
+(keymap-global-set "C-q n"   'my/toggle-line-numbers)
 
 
 (setq custom-file "~/.emacs.d/custom.el")
