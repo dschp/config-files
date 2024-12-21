@@ -48,6 +48,8 @@ alias pe='pass edit'
 alias am=alsamixer
 alias bt=bluetoothctl
 
+alias mt=mutt
+
 alias mm=mpg123
 alias ms='mpg123 -z'
 alias mz='mpg123 -Z'
