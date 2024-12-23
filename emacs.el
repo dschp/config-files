@@ -125,6 +125,7 @@
 (keymap-global-set "<f1>" 'my/spawn-st)
 (keymap-global-set "<f2>" 'shell)
 
+(keymap-global-set "M-S"  'save-buffer)
 (keymap-global-set "C-v"  'visual-line-mode)
 
 (keymap-global-set "C-]"  'other-window)
