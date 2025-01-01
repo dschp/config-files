@@ -4,59 +4,43 @@ prog1     = myCA
 prog3     = mylayer
 prog4     = myclear
 
-xfer        = mycompose
-send        = myfrench
-reply       = mygerman
-forwardmail = myportuguese
-save        = myspanish
-
-
 [main]
-myCA     = layer(myCA)
-mylayer  = layer(mylayer)
-myclear  = clear()
-
-mycompose    = compose
-myfrench     = oneshot(myfrench)
-mygerman     = oneshot(mygerman)
-myportuguese = oneshot(myportuguese)
-myspanish    = oneshot(myspanish)
+myCA      = layer(myCA)
+mylayer   = layer(mylayer)
+myclear   = clear()
+mycompose = compose
 
 
-esc         = layer(meta)
-capslock    = layer(control)
-alt         = layer(alt)
-meta        = layer(meta)
-leftcontrol = esc
+capslock  = layer(control)
+alt       = layer(alt)
+meta      = layer(meta)
 
-d+f = clear()
-j+k = clear()
 
-mouse1 = clear()
-mouse2 = clear()
+mouse1    = clear()
+mouse2    = clear()
 
 
 [meta:M]
-capslock     = layer(myMC)
-shift        = layer(myMS)
-alt          = layer(myMA)
-mycompose    = layer(myMAS)
-myCA         = layer(myMCA)
+capslock  = layer(myMC)
+shift     = layer(myMS)
+alt       = layer(myMA)
+mycompose = layer(myMAS)
+myCA      = layer(myMCA)
 [myMC:M-C]
-shift        = layer(myMCS)
-alt          = layer(myMCA)
+shift     = layer(myMCS)
+alt       = layer(myMCA)
 [myMS:M-S]
-capslock     = layer(myMCS)
-alt          = layer(myMAS)
+capslock  = layer(myMCS)
+alt       = layer(myMAS)
 [myMA:M-A]
-capslock     = layer(myMCA)
-shift        = layer(myMAS)
+capslock  = layer(myMCA)
+shift     = layer(myMAS)
 [myMCS:M-C-S]
-alt          = layer(myMCAS)
+alt       = layer(myMCAS)
 [myMAS:M-A-S]
-capslock     = layer(myMCAS)
+capslock  = layer(myMCAS)
 [myMCA:M-C-A]
-shift        = layer(myMCAS)
+shift     = layer(myMCAS)
 [myMCAS:M-C-A-S]
 
 [control:C]
@@ -129,131 +113,4 @@ capslock     = oneshot(control)
 rightalt     = oneshot(myCA)
 rightcontrol = oneshot(myCA)
 
-
 slash = compose
-left  = oneshot(mygerman)
-up    = oneshot(myspanish)
-down  = oneshot(myportuguese)
-right = oneshot(myfrench)
-
-
-[myfrench]
-q = macro(compose a ")
-a = macro(compose a `)
-s = macro(compose a ^)
-
-e = macro(compose e `)
-r = macro(compose e ')
-d = macro(compose e ^)
-
-y = macro(compose y ")
-
-u = macro(compose u ")
-j = macro(compose u `)
-h = macro(compose u ^)
-
-i = macro(compose i ")
-k = macro(compose i ^)
-
-o = macro(compose o ")
-l = macro(compose o ^)
-
-c = macro(compose c ,)
-n = macro(compose n ~)
-
-z = macro(compose a e)
-x = macro(compose o e)
-
-[myfrench+shift]
-q = macro(compose A ")
-a = macro(compose A `)
-s = macro(compose A ^)
-
-e = macro(compose E `)
-r = macro(compose E ')
-d = macro(compose E ^)
-
-y = macro(compose Y ")
-
-u = macro(compose U ")
-j = macro(compose U ')
-h = macro(compose U ^)
-
-i = macro(compose I ")
-i = macro(compose I ^)
-
-o = macro(compose O ")
-l = macro(compose O ^)
-
-c = macro(compose C ,)
-n = macro(compose N ~)
-
-z = macro(compose A E)
-x = macro(compose O E)
-
-[mygerman]
-a = macro(compose a ")
-o = macro(compose o ")
-u = macro(compose u ")
-s = macro(compose ss)
-[mygerman+shift]
-a = macro(compose A ")
-o = macro(compose O ")
-u = macro(compose U ")
-s = macro(compose SS)
-
-[myportuguese]
-c = macro(compose c ,)
-
-a = macro(compose a ')
-e = macro(compose e ')
-i = macro(compose i ')
-o = macro(compose o ')
-u = macro(compose u ')
-
-s = macro(compose a ~)
-9 = macro(compose o ~)
-
-q = macro(compose a `)
-z = macro(compose a ^)
-d = macro(compose e ^)
-l = macro(compose o ^)
-[myportuguese+shift]
-c = macro(compose C ,)
-
-a = macro(compose A ')
-e = macro(compose E ')
-i = macro(compose I ')
-o = macro(compose O ')
-u = macro(compose U ')
-
-s = macro(compose A ~)
-9 = macro(compose O ~)
-
-q = macro(compose A `)
-z = macro(compose A ^)
-d = macro(compose E ^)
-l = macro(compose O ^)
-
-
-[myspanish]
-1 = macro(compose ! !)
-/ = macro(compose ? ?)
-
-n = macro(compose n ~)
-
-a = macro(compose a ')
-e = macro(compose e ')
-i = macro(compose i ')
-o = macro(compose o ')
-u = macro(compose u ')
-j = macro(compose u ")
-[myspanish+shift]
-n = macro(compose N ~)
-
-a = macro(compose A ')
-e = macro(compose E ')
-i = macro(compose I ')
-o = macro(compose O ')
-u = macro(compose U ')
-j = macro(compose U ")
