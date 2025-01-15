@@ -29,6 +29,7 @@ set pager_index_lines = 4
 set mask = "!^dovecot"
 set attach_save_dir = "~/mutt-files"
 
+auto_view text/html
 alternative_order text/plain text/html
 ignore   *
 unignore From To Reply-To Subject Cc Date Authentication-Results
